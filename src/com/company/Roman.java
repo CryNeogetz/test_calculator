@@ -17,7 +17,7 @@ public enum Roman {
         return value;
     }
 
-    public static List<Roman> getReverseSortedValues() {
+    public static List<Roman> getListRom() {
         return Arrays.asList(values());
     }
 }

@@ -89,7 +89,7 @@ public class Main {
     public static int romToArab(String num) throws Exception {
         int result = 0;
         int i = 0;
-        List<Roman> romanList = Roman.getReverseSortedValues();
+        List<Roman> romanList = Roman.getListRom();
         while (num.length() > 0 && i < romanList.size()) {
             Roman symbol = romanList.get(i);
             if (num.startsWith(symbol.name())) {
@@ -109,7 +109,7 @@ public class Main {
     }
 
     public  static  String arabToRom(int num) {
-        List<Roman> romanList = Roman.getReverseSortedValues();
+        List<Roman> romanList = Roman.getListRom();
         int i = 0;
         String sb = "";
 
